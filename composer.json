@@ -1,0 +1,19 @@
+{
+    "name": "chriswp/chatboot-facebook-sdk",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "chris16",
+            "email": "christopher.webpg@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^6.4"
+    },
+    "autoload":{
+        "psr-4":{
+            "ChatBoot\\": "src"
+        }
+    }
+}
