@@ -3,7 +3,7 @@
 namespace ChatBoot\Mensagem;
 
 
-class Text implements Mensagem
+class Audio implements Mensagem
 {
 
     private $recipientId;
@@ -20,8 +20,12 @@ class Text implements Mensagem
                 'id' => $this->recipientId
             ],
             'message' => [
-                'text' => $mensagem,
-                'metadado' => 'DEVELOPER_DEFINED_METADATA'
+                'attachment' => [
+                    'type' => 'audio',
+                    'payload' => [
+                        'url' => $mensagem
+                    ]
+                ]
             ]
         ];
     }
