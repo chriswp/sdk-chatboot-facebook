@@ -3,7 +3,8 @@
 
     <testsuites>
         <testsuite name="ChatBoot Facebook">
-            <directory>./testes</directory>
+            <directory>./testes/unitario</directory>
+            <directory>./testes/integracao</directory>
         </testsuite>
 
     </testsuites>
